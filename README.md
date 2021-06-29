@@ -1,4 +1,3 @@
-# Baseball
 ## Analysis of baseball stats and run generation vs salary <br>
 ## <i>(Update of class project done in R on 2019 MLB stats)</i> <br>
 Currently just analysis of player performance and salaries using machine learning.  A metric for run creation is derived by fitting a random forest model to team runs with team stats as indicators, then predicting the run generation for each individual player.  This is then normalized and compared to player salaries.  Also important to note is that many MLB players are on rookie contracts, where their contract is not a result of past/current performance.  Because of this, we predict the salaries of these players using KNN clustering.  Clusters are various sizes are created using the veteran players, and the clusters of the rookei players are then predicted using these models.  The salaries of these models are then averaged and used as prediction salaries of players currently under rookie contracts. <br> <br>
